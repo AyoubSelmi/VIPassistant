@@ -1,0 +1,4 @@
+rootProject.name='VIPassistant'
+include ':app'
+
+include ':openCVLibrary345'

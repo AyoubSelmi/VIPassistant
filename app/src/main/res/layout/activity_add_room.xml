@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRoom">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/header_login"
+        android:elevation="5dp" />
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ic_settings_black_24dp" />
+    <TextView
+        android:id="@+id/titleconfigitems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="40dp"
+        android:elevation="5dp"
+        android:text="Adding a room"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/bgHeader"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="-100dp"
+        android:src="@drawable/circletransparant" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/circletransparant" />
+        <ImageView
+            android:id="@+id/circle3"
+            android:layout_width="182dp"
+            android:layout_height="182dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="-80dp"
+            android:layout_marginBottom="-30dp"
+            android:src="@drawable/circletransparant" />
+
+        <ImageView
+            android:id="@+id/circle4"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="-50dp"
+            android:layout_marginBottom="-50dp"
+            android:layout_toLeftOf="@+id/circle3"
+            android:src="@drawable/circletransparant" />
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-50dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp">
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ok"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:text="ok"
+            android:textSize="80sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bg_ui"
+            android:src="@drawable/ic_add" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textlatlong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlue"
+        android:text=""/>
+    <TextView
+        android:id="@+id/textadress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlue"
+        android:layout_below="@+id/textlatlong"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_corner"
+        android:text=""/>
+</RelativeLayout>
+

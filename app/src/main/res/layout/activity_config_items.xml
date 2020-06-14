@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".config_items"
+    tools:ignore="VectorDrawableCompat">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/header_login"
+        android:elevation="5dp" />
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imgbtn"/>
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ic_settings_black_24dp" />
+    <TextView
+        android:id="@+id/titleconfigitems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="40dp"
+        android:elevation="5dp"
+        android:text="Configure your items"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/bgHeader"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="-100dp"
+        android:src="@drawable/circletransparant" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/circletransparant" />
+<!--    <ImageView-->
+<!--        android:id="@+id/circle3"-->
+<!--        android:layout_width="182dp"-->
+<!--        android:layout_height="182dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginRight="-80dp"-->
+<!--        android:layout_marginBottom="-30dp"-->
+<!--        android:src="@drawable/circletransparant" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/circle4"-->
+<!--        android:layout_width="134dp"-->
+<!--        android:layout_height="134dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginRight="-50dp"-->
+<!--        android:layout_marginBottom="-50dp"-->
+<!--        android:layout_toLeftOf="@+id/circle3"-->
+<!--        android:src="@drawable/circletransparant" />-->
+
+    <RelativeLayout
+    android:id="@+id/btnadditem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/bgHeader"
+    android:layout_marginBottom="-50dp"
+    android:layout_centerHorizontal="true"
+    android:elevation="10dp">
+        <ImageButton
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btAddItem"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_ui"
+            android:src="@drawable/ic_add" />
+        <TextView
+            android:id="@+id/AddDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:layout_below="@+id/btAddItem"
+            android:text="Add an item"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/btnadditem">
+        <ImageView
+            android:id="@+id/rectangle1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:src="@drawable/rectangle"/>
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:layout_toRightOf="@+id/rectangle1"
+            android:text="or"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_toRightOf="@+id/or"
+            android:id="@+id/rectangle2"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/rectangle"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/deleteitemtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:layout_below="@+id/rectangle1"
+            android:text="Delete an item from the list"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/deleteitemtxt"
+            android:background="@drawable/button_rounded"
+            android:id="@+id/recyclerview_items"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+</RelativeLayout>

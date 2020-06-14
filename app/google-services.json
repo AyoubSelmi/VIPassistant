@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "528871400691",
+    "firebase_url": "https://vipassistant-ad4e0.firebaseio.com",
+    "project_id": "vipassistant-ad4e0",
+    "storage_bucket": "vipassistant-ad4e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528871400691:android:0182f139b8ca69e940c386",
+        "android_client_info": {
+          "package_name": "talan.vipassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528871400691-r3ff09na4ib94n0e92k7ctnhi4af8mul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "talan.vipassistant",
+            "certificate_hash": "3a3ab336e6e1ba403be0a3307c9958e9ac00e158"
+          }
+        },
+        {
+          "client_id": "528871400691-hcfld7e81jccksqvflliqbrbff6hl0m3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3EYFVbbfaoa7vUt_-nUC_TBMsBpxjTK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528871400691-hcfld7e81jccksqvflliqbrbff6hl0m3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

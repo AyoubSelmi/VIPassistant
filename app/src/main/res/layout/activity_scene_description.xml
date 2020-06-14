@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".SceneDescription">
+    <FrameLayout
+        android:id="@+id/frame_sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextureView
+            android:id="@+id/texture_scene_description"
+            android:layout_width="360dp"
+            android:layout_height="490dp"
+            android:layout_alignParentTop="true" />
+    </FrameLayout>
+    <Button
+        android:id="@+id/save_picture_scened"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Describe"
+        android:textColor="@color/colorWhite"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/frame_sd"
+        android:background="@drawable/bg_ui"/>
+<!--    <Button-->
+<!--        android:id="@+id/upload_picture_scened"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:text="upload"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="500dp"-->
+<!--        />-->
+</RelativeLayout>
